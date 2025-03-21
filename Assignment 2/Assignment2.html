@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        .row1{
+            display: flex;
+        }
+        .first{
+            background-color: red;
+            height: 20px;
+            width: 50%;
+        }
+        .second{
+            background-color: blue;
+            height: 20px;
+            width: 50%;
+        }
+        .first2{
+            background-color: green;
+            height: 20px;
+            width: 95%;
+        }
+        .second2{
+            background-color: blue;
+            height: 20px;
+            width: 5%;
+        }
+        .first3{
+            background-color: red;
+            height: 20px;
+            width: 5%;
+        }
+        .second3{
+            background-color: green;
+            height: 20px;
+            width: 90%;
+        }
+        .third3{
+            background-color: blue;
+            height: 20px;
+            width: 5%;
+        }
+        .first4{
+            background-color: red;
+            height: 20px;
+            width: 95%;
+        }
+        .second4{
+            background-color: blue;
+            height: 20px;
+            width: 5%;
+        }
+        .first5{
+            background-color: green;
+            height: 20px;
+            width: 100%;
+        }
+        .second5{
+            background-color: red;
+            height: 10px;
+            width: 2%;
+            margin-left: 50%;
+            margin-top: 5px;
+        }
+        .first6{
+            background-color: red;
+            height: 20px;
+            width: 100%;
+        }
+        .second6{
+            background-color: blue;
+            height: 20px;
+            width: 2%;
+            margin-left: 50%;
+        }
+        .first7{
+            background-color: red;
+            height: 20px;
+            width: 5%;
+        }
+        .second7{
+            background-color: blue;
+            height: 20px;
+            width: 95%;
+        }
+        .third7{
+            background-color: green;
+            height: 10px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        .first8{
+            background-color: bisque;
+            height: 20px;
+            width: 100%;
+            display: flex;
+        }
+        .second8{
+            background-color: green;
+            height: 20px;
+            width: 22%;
+            margin-left: 35px;
+        }
+        .first9{
+            background-color: bisque;
+            height: 20px;
+            width: 100%;
+            display: flex;
+        }
+        .second9{
+            background-color: green;
+            height: 20px;
+            width: 20px;
+            margin-left: 19%;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            align-items: center;
+            align-content: center;
+            margin-left: 10%;
+        }
+        .noticeboard{
+            border: 1px solid black;
+        }
+        .sticky{
+            margin: 20px;
+            display: flex;
+            width: 60%;
+            background-color: aliceblue;
+            text-align: center;
+            justify-content: center;
+            color: darkblue;
+            margin-left: 300px;
+            border: 1px solid;
+            border-radius: 10px;
+            position: sticky;
+            top: 0;
+        }
+        .icons{
+            display: flex;
+            margin-left: 10px;
+        }
+        .button{
+            margin-left: 10px;
+            margin: 5px;
+            background-color: deepskyblue;
+            border-radius: 20px;
+            width: 100px;
+            text-align: center;
+            color: darkblue;
+            border: none;
+        }
+        .notices{
+            display: flex;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+        .notice{
+            margin-left: 50px;
+            width: 250px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: #EEF7FF;
+            text-align: center;
+            align-content: center;
+            text-spacing-trim: 2px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <center><h3>Question 1</h3></center>
+    Row 1
+    <div class="row1">
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+    Row 2
+    <div class="row1">
+        <div class="first2"></div>
+        <div class="second2"></div>
+    </div>
+    Row 3
+    <div class="row1">
+        <div class="first3"></div>
+        <div class="second3"></div>
+        <div class="third3"></div>
+    </div>
+    Row 4
+    <div class="row1">
+        <div class="first4"></div>
+        <div class="second4"></div>
+    </div>
+    Row 5
+    <div class="row1">
+        <div class="first5">
+            <div class="second5"></div>
+        </div>
+    </div>
+    Row 6
+    <div class="row1">
+        <div class="first6">
+            <div class="second6"></div>
+        </div>
+    </div>
+    Row 7
+    <div class="row1">
+        <div class="first7"></div>
+        <div class="second7">
+            <div class="third7"></div>
+        </div>
+    </div>
+    Row 8
+    <div class="row1">
+        <div class="first8">
+            <div class="second8"></div>
+            <div class="second8"></div>
+            <div class="second8"></div>
+            <div class="second8"></div>
+        </div>
+    </div>
+    Row 9
+    <div class="row1">
+        <div class="first9">
+            <div class="second9"></div>
+            <div class="second9"></div>
+            <div class="second9"></div>
+            <div class="second9"></div>
+        </div>
+    </div><br><br><br>
+
+    <center><h3>Question 2</h3></center><br><br>
+        <div class="question2">
+            <table border="1px" style="height: 300px; text-align: center;">
+                <tr>
+                    <td colspan="4">A</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2">B</td>
+                    <td colspan="2">C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">F</td>
+                    <td colspan="3">G</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">H</td>
+                    <td rowspan="2">I</td>
+                    <td>J</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td colspan="4">L
+                
+                        <table border="1" style="border-left: 1px solid; height: 100%; width: 150px; " align="right"  >
+                            <tr>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <td>N</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table><br><br><br>
+    </div>
+
+    <div class="question3">
+        <center><h3>Question 3</h3></center>
+        <div class="noticeboard">
+            <div class="sticky">
+                <div>
+                    <strong>HTML5 Sticky</strong>
+                    <br>
+                    <em>Adding Sticky to Web</em>
+                </div>
+                <div class="icons" align="right"> 
+                    <img src="images/add.png" alt="add" style="height: 20px; width: 20px; margin-top: 10px; margin-left: 500px;">
+                    <img src="images/search.png" alt="search" style="height: 20px; width: 20px; margin-top: 10px; margin-left: 10px;">
+                    <img src="images/user.png" alt="user" style="height: 20px; width: 20px; margin-top: 10px; margin-left: 10px;">
+                    <img src="images/cancel.png" alt="cancle" style="height: 20px; width: 20px; margin-left: 10px; margin-top: 10px;">  
+                    <input type="button" value="$Donate" class="button">                  
+                </div>
+
+            </div><br><br><br><br>
+
+            <div class="notices">
+
+                <textarea name="notice" id="notice" class="notice">Date : 19/03/25                  Time : 08 AM - 01PM              Hybrid Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 19/03/25                  Time : 01 PM - 07PM              Hybrid Module Lab</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 20/03/25                  Time : 08 AM - 01PM              DBT Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 20/03/25                  Time : 01 PM - 07PM              DBT Module Lab</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+
+            </div>
+
+            <div class="notices">
+
+                <textarea name="notice" id="notice" class="notice">Date : 21/03/25                  Time : 08 AM - 01PM              HR Intreaction Session</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 21/03/25                  Time : 01 PM - 07PM              Apti Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 22/03/25                  Time : 08 AM - 01PM              Hybrid Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 22/03/25                  Time : 01 PM - 07PM              Hybrid Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+
+            </div>
+
+            <div class="notices">
+
+                <textarea name="notice" id="notice" class="notice">Date : 21/03/25                  Time : 08 AM - 01PM              HR Intreaction Session</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 21/03/25                  Time : 01 PM - 07PM              Apti Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 22/03/25                  Time : 08 AM - 01PM              Hybrid Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+                <textarea name="notice" id="notice" class="notice">Date : 22/03/25                  Time : 01 PM - 07PM              Hybrid Module Lecture</textarea><img src="images/cancel.png" alt="cancle" style="height: 20px;">
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

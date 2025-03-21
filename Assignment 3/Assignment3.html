@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        .body{
+            display: flex;
+            margin: 50px;
+            border: 2px solid black;
+        }
+        .video{
+            width: 50%;
+            margin: 50px;
+            align-content: center;
+        }
+        .form{
+            width: 50%;
+            margin: 50px;
+            text-align: center;
+            align-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><center>Registraction Form</center></h1>
+    
+    <div class="body">
+
+        <div class="video">
+            <video src="SampleVideo.mp4" controls width="100%"></video>
+        </div>
+    
+        <div class="form">
+            
+            <form action="">
+
+                Name :
+                <input type="text" name="text" id="text" placeholder="Name" required><br><br>
+
+                Birth Date :
+                <input type="date" name="date" id="date" required><br><br>
+
+                Email :
+                <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+
+                Password :
+                <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+
+                Address :
+                State:
+                <select name="state" id="state">
+                    <option value="Maharshatra" selected>Maharashatra</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Utter Pradesh">Utter Pradesh</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                </select>
+
+                &nbsp District :
+                <select name="district" id="district">
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Nagpur">Nagpur</option>
+                </select>
+
+                &nbsp City :
+                <select name="city" id="city">
+                    <option value="Nagpur">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Solapur">Nagpur</option>
+                    <option value="Mumbai">Satara</option>
+                    <option value="Kolhapur">Kolhapur</option>
+                    <option value="Nashik">karad</option>
+                    <option value="Nagpur">Nashik</option>
+                </select><br><br>
+
+                Gender :
+                <input type="radio">Male
+                <input type="radio">Female <br><br>
+
+                Upload Photo :
+                <input type="file" ><br><br>
+
+                Select Your Course :
+                <select name="course" id="course">
+                    <option value="DAC">Select</option>
+                    <option value="DAC">DAC</option>
+                    <option value="DAC">DMC</option>
+                    <option value="DAC">DBDA</option>
+                    <option value="DAC">DESD</option>
+                    <option value="DAC">DITISS</option>
+                </select><br><br>
+
+                <input type="submit">
+
+                &nbsp <input type="reset">
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

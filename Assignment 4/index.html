@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        .h1{
+            text-align: center;
+        }
+        .main{
+            margin: 0 auto;
+            width: 50%; 
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+        }
+        tr{
+            text-align: start;
+        }
+        button{
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input{
+            /* text-size-adjust: 40px; */
+            padding: 5px;
+            width: 250px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1"><u>Calculator</u></h1>
+    <div class="main">
+        <table>
+            <form action="">
+        
+            <tr>
+            <td><label for="number1">Enter Number 1</label></td>
+            <td><input type="number" name="number1" id="number1"><br></td>        
+            </tr>
+
+            <tr>
+            <td><label for="number2">Enter Number 2</label></td>
+            <td><input type="number" name="number2" id="number2"><br></td>        
+            </tr>
+
+            <tr>
+            <td><label for="result">Result</label></td>
+            <td><input type="number" name="result" id="result" readonly><br></td>        
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="button" onclick="performCalculation('add')">Addition</button>
+                    <button type="button" onclick="performCalculation('subtract')">Subtraction</button>
+                    <button type="button" onclick="performCalculation('multiply')">Multiplication</button>
+                    <button type="button" onclick="performCalculation('divide')">Division</button>
+                </td>
+            </tr>
+
+
+
+        </table>
+    </form>
+
+    </div>
+
+    <script>
+        function performCalculation(operation){
+            let num1 = parseFloat(document.getElementById('number1').value);
+            let num2 = parseFloat(document.getElementById('number2').value);
+            let result;
+
+            if(isNaN(num1) || isNaN(num2)){
+                console.out("Please enter a valid numbers.");
+                return;
+            }
+
+            switch(operation){
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    if(num2 === 0){
+                        alert("Division by zero is not allowed");
+                        return;
+                    }
+                    result = num1 / num2;
+                    break;
+                default:
+                    alert("Invalid Operation.");
+                    return;
+            }
+
+            document.getElementById('result').value = result.toFixed(2)
+
+            
+        }
+    </script>
+</body>
+</html>
